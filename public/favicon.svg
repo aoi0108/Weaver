@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="diffGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="sheetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#sheetGrad)" stroke="url(#diffGrad)" stroke-width="2" />
+  <path d="M18 16C18 14.8954 18.8954 14 20 14H36L46 24V48C46 49.1046 45.1046 50 44 50H20C18.8954 50 18 49.1046 18 48V16Z" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+  <path d="M36 14V24H46" fill="#334155" stroke="#475569" stroke-width="1.5" />
+
+  <path d="M26 31C26 27.6863 28.6863 25 32 25C34.3 25 36.3 26.3 37.3 28.2M38 25V29H34" stroke="url(#diffGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M38 37C38 40.3137 35.3137 43 32 43C29.7 43 27.7 41.7 26.7 39.8M26 43V39H30" stroke="url(#diffGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <path d="M46 12L47.5 16.5L52 18L47.5 19.5L46 24L44.5 19.5L40 18L44.5 16.5L46 12Z" fill="url(#diffGrad)" filter="url(#glow)" />
+</svg>
+
