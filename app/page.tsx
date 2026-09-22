@@ -81,7 +81,7 @@ interface MultiFilesState {
   changeLog: { fileName: string; category: string; base64: string };
 }
 
-export default function DiffSyncDashboard() {
+export default function WeaverDashboard() {
   const [changeInput, setChangeInput] = useState(DEMO_PRESETS[0].prompt);
   
   // 独立4ファイルの原本・更新後Base64マップ
@@ -453,7 +453,7 @@ export default function DiffSyncDashboard() {
     const url = URL.createObjectURL(content);
     const a = document.createElement('a');
     a.href = url;
-    a.download = isUpdated ? 'DiffSync_AI_更新済設計書一式.zip' : 'DiffSync_設計書一式.zip';
+    a.download = isUpdated ? 'Weaver_AI_更新済設計書一式.zip' : 'Weaver_設計書一式.zip';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -575,14 +575,12 @@ export default function DiffSyncDashboard() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-xl font-bold tracking-tight text-white">DiffSync AI</h1>
+                <h1 className="text-xl font-bold tracking-tight text-white">Weaver</h1>
                 <span className="text-[11px] bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full border border-indigo-500/30 font-semibold">
-                  設計書自動特定 ＆ 自己整合修正エージェント
+                  仕様書のコンフリクトを自動調停するAIエージェント
                 </span>
               </div>
-              <p className="text-xs text-slate-400 mt-0.5">
-                自然言語の仕様変更リクエストから該当設計書をAIが特定・提示し、Excelを直接修正
-              </p>
+              
             </div>
           </div>
         </div>

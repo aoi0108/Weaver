@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DiffSync AI | 仕様書自動特定 ＆ 自己整合修正エージェント",
+  title: "Weaver | 仕様書のコンフリクトを自動調停するAIエージェント",
   description: "自然言語の仕様変更リクエストから該当設計書をAIが自動特定・整合調停し、Excel仕様書バイナリを直接修正する自律型エージェント",
   icons: {
     icon: [
