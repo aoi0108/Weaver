@@ -1,4 +1,3 @@
-export const dynamic = 'force-dynamic';
 // app/api/excel/bundle/route.ts
 import { NextResponse } from 'next/server';
 import { generateMultiFileSpecBundle } from '@/lib/excel-handler';

@@ -23,7 +23,7 @@ const orca = new OpenAI({
 const FAST_ROUTER_MODEL = 'orcarouter/free'; 
 
 // Step 2 (パッチ策定): 複雑な制約チェックやJSON生成は高推論モデルを利用
-const REASONING_ROUTER_MODEL = 'orcarouter/auto';
+const REASONING_ROUTER_MODEL = 'openai/gpt-4o';
 
 // Step 3 (フェイルオーバー): メインモデル障害時用の信頼性の高い受け皿モデル
 const FALLBACK_MODEL = 'google/gemini-2.5-flash';
